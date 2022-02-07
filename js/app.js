@@ -43,7 +43,7 @@
 
 Проверить, чтобы все работало без ошибок в консоли */
 
-const numberOfFilms = +prompt('сколько фильмов вы уже посмотрели?', '');
+/*const numberOfFilms = +prompt('сколько фильмов вы уже посмотрели?', '');
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -61,4 +61,43 @@ const a = prompt('Один из последних просмотренных ф
       personalMovieDB.movies[a] = b;
       personalMovieDB.movies[c] = d;
 
-      console.log(personalMovieDB);
+      console.log(personalMovieDB);*/
+
+                      // Условия 
+  /*  if (4 == 9) {
+        console.log('ok!');
+    } else {
+        console.log('error!');
+    }
+
+    const num = 50;
+    if (num < 49) {
+        console.log('error');
+    } else if (num > 100) {
+        console.log('много');
+    } else {
+        console.log('ok!');
+    }
+
+    (num === 50) ? console.log('ok') : console.log('error');*/
+
+
+    const num = 50;
+// строгое сравнение switch
+    
+    switch (num) {
+        case 49:
+            console.log('не верно');
+            break;
+        
+        case 100:
+            console.log('не верно');
+            break;
+
+        case 50:
+            console.log('верно');
+            break;
+        default:
+            console.log('не в этот раз');
+            break;
+    }
