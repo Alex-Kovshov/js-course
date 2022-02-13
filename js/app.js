@@ -183,7 +183,7 @@ genres
 
 P.S. Функции вызывать не обязательно*/
 
-let numberOfFilms;
+/*let numberOfFilms;
 
 function start() {
     numberOfFilms = +prompt('сколько фильмов вы уже посмотрели?', '');
@@ -209,4 +209,35 @@ const a = prompt('Один из последних просмотренных ф
       personalMovieDB.movies[a] = b;
       personalMovieDB.movies[c] = d;
 
-      console.log(personalMovieDB);
+      console.log(personalMovieDB);*/
+
+     
+     
+     
+      // Callback функции 
+
+      function first() {
+          //Do somthing
+          setTimeout(function() {
+              console.log(1);
+          }, 500);
+      }
+
+      function second() {
+          console.log(2);
+      }
+
+      first();
+      second();
+
+      function learnJS(lang, Callback) {
+          console.log(`Я учу: ${lang}`);
+          Callback();
+      }
+
+      function done() {
+        console.log('Я прошел урок!');
+      }
+
+      learnJS('JavaScript', done);
+
